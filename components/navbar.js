@@ -32,10 +32,10 @@ export default function Navbar(props) {
       href: "/archive"
     },
     {
-      label: "Pro Version",
-      href: "https://stablo-pro.web3templates.com/",
+      label: "Shop",
+      href: "https://https://onlyfame.mysellix.io",
       external: true,
-      badge: "new"
+      // badge: "new"
     },
     {
       label: "Download",
@@ -77,30 +77,16 @@ export default function Navbar(props) {
                 </div>
                 <div className="flex w-full items-center justify-between md:w-auto">
                   <Link href="/" className="w-28 dark:hidden">
-                    {props.logo ? (
-                      <Image
-                        {...urlForImage(props.logo)}
-                        alt="Logo"
-                        priority={true}
-                        sizes="(max-width: 640px) 100vw, 200px"
-                      />
-                    ) : (
+                    {(
                       <span className="block text-center">
-                        Stablo
+                        Stablos
                       </span>
                     )}
                   </Link>
                   <Link href="/" className="hidden w-28 dark:block">
-                    {props.logoalt ? (
-                      <Image
-                        {...urlForImage(props.logoalt)}
-                        alt="Logo"
-                        priority={true}
-                        sizes="(max-width: 640px) 100vw, 200px"
-                      />
-                    ) : (
+                    {(
                       <span className="block text-center">
-                        Stablo
+                        Stablos
                       </span>
                     )}
                   </Link>
