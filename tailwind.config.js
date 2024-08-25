@@ -1,14 +1,11 @@
 const colors = require("tailwindcss/colors");
 const defaultTheme = require("tailwindcss/defaultTheme");
-const {nextui} = require("@nextui-org/react");
-/** @type {import('tailwindcss').Config} */
 
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}"
   ],
   darkMode: "class", // or 'media' or 'class'
   theme: {
@@ -33,12 +30,5 @@ module.exports = {
   variants: {
     extend: {}
   },
-  plugins: [require("@tailwindcss/typography"), nextui()]
+  plugins: [require("@tailwindcss/typography")]
 };
-
-
-
-
-// tailwind.config.js
-
-
